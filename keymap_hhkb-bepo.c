@@ -53,7 +53,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      *       |Alt|Gui  |         Space         |Gui  |Alt|
      *       `-------------------------------------------'
      */
-    KEYMAP(ESC, FN4, FN5,   FN6,   FN7,   FN8,   FN9,   FN10,   MINS,   SLSH,   FN11,   EQL,FN12, BSLS,FN27,\
+    KEYMAP(ESC, FN4, FN5,   FN6,   FN7,   FN8,   FN9,   FN10,   MINS,   SLSH,   FN11,   EQL,FN12, BSLS,FN26,\
            TAB, B,   FN13,   P,   O,   FN14,   FN15,   V,   D,   L,   J,   Z,W,BSPC, \
            LCTL,A,   U,   I,   E,   COMM,   C,   T,   S,   R,   N,M,ENT,	\
            FN2,FN16,   Y,   X,   DOT,   K,   QUOT,  Q ,   G,H, F,RSFT,FN0, \
@@ -102,21 +102,21 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
 
     /* Layer 2: Fake Shift Layer
      * ,-----------------------------------------------------------.
-     * |Esc|  "|  2|  3|  (|  )|  @|  +|  -|  /|  *|  =|  %| Q\|  $|
+     * |Esc|  "|  2|  3|  (|  )|  @|  +|  -|  /|  *|  =|  %| \|  $|
      * |-----------------------------------------------------------|
-     * |Tab  |  Q|  W|  E|  R|  T|  Y|  U|  I|  O|  P|  [|  ]|Backs|
+     * |Tab  |  B|  É|  P|  O|  È|  ^|  V|  D|  L|  J|  Z|  W|Backs|
+     * |----------------------------------------------------------|
+     * |Contro|  A|  U|  I|  E|  ;|  C|  T|  S|  R|  N|  M|Enter   |
      * |-----------------------------------------------------------|
-     * |Contro|  A|  S|  D|  F|  G|  H|  J|  K|  L|  ;|  '|Enter   |
-     * |-----------------------------------------------------------|
-     * |Shift   |  Z|  X|  C|  V|  B|  N|  M|  ,|  .|  /|Shift |Fn0|
+     * |Shift   |  À|  Y|  X|  :|  K|  '|  Q|  G|  H|  F|Shift |Fn0|
      * `-----------------------------------------------------------'
      *       |Alt|Gui  |         Space         |Gui  |Alt|
      *       `-------------------------------------------'
      */
-    KEYMAP(PWR, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, TRNS, TRNS, TRNS, FN28, \
+    KEYMAP(PWR, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, TRNS, TRNS, TRNS, FN27, \
            CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,FN24,TRNS,PSCR,SLCK,PAUS, UP, TRNS, BSPC,      \
-           TRNS,VOLD,VOLU,MUTE,TRNS,TRNS,PAST,PSLS,HOME,PGUP,LEFT,RGHT,PENT,            \
-           TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,FN25,PMNS,END, PGDN,DOWN,TRNS,TRNS,            \
+           TRNS,VOLD,VOLU,MUTE,TRNS,SCLN,PAST,PSLS,HOME,PGUP,LEFT,RGHT,PENT,            \
+           TRNS,TRNS,TRNS,TRNS,FN29,TRNS,FN25,PMNS,END, PGDN,DOWN,TRNS,TRNS,            \
                 TRNS,TRNS,          TRNS,               TRNS,TRNS),
 };
 
@@ -171,8 +171,9 @@ const uint16_t fn_actions[] PROGMEM = {
     [23] = ACTION_MODS_KEY(MOD_LSFT, KC_RBRC),// }
     [24] = ACTION_MODS_KEY(MOD_LSFT, KC_1),// !
     [25]  = ACTION_MODS_KEY(MOD_LSFT, KC_SLSH),// ?
-    [27] = ACTION_MODS_KEY(MOD_LSFT, KC_4),// $
-    [28] = ACTION_MODS_KEY(MOD_LSFT, KC_3),// #
+    [26] = ACTION_MODS_KEY(MOD_LSFT, KC_4),// $
+    [27] = ACTION_MODS_KEY(MOD_LSFT, KC_3),// #
+    [29] = ACTION_MODS_KEY(MOD_LSFT, KC_SCLN),// :
     
 };
 #endif
