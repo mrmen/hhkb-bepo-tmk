@@ -53,7 +53,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      *       |Alt|Gui  |         Space         |Gui  |Alt|
      *       `-------------------------------------------'
      */
-    KEYMAP(ESC, FN4, FN5,   FN6,   FN7,   FN8,   FN9,   FN10,   MINS,   SLSH,   FN11,   EQL,FN12, BSLS,FN26,\
+    KEYMAP(ESC, FN4, FN5,   FN6,   FN7,   FN8,   FN9,   FN10,   MINS,   SLSH,   FN11,   EQL,FN12, BSLS,FN27,\
            TAB, B,   FN13,   P,   O,   FN14,   FN15,   V,   D,   L,   J,   Z,W,BSPC, \
            LCTL,A,   U,   I,   E,   COMM,   C,   T,   S,   R,   N,M,ENT,	\
            FN2,FN16,   Y,   X,   DOT,   K,   QUOT,  Q ,   G,H, F,RSFT,FN0, \
@@ -113,7 +113,7 @@ const uint8_t keymaps[][MATRIX_ROWS][MATRIX_COLS] PROGMEM = {
      *       |Alt|Gui  |         Space         |Gui  |Alt|
      *       `-------------------------------------------'
      */
-    KEYMAP(PWR, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, TRNS, TRNS, TRNS, FN27, \
+    KEYMAP(PWR, 1,  2,  3,  4,  5,  6,  7,  8,  9,  0, TRNS, TRNS, TRNS, FN28, \
            CAPS,TRNS,TRNS,TRNS,TRNS,TRNS,FN24,TRNS,PSCR,SLCK,PAUS, UP, TRNS, BSPC,      \
            TRNS,VOLD,VOLU,MUTE,TRNS,SCLN,PAST,PSLS,HOME,PGUP,LEFT,RGHT,PENT,            \
            TRNS,TRNS,TRNS,TRNS,FN29,TRNS,FN25,PMNS,END, PGDN,DOWN,TRNS,TRNS,            \
