@@ -17,6 +17,7 @@
 #define AC_ROCH     ACTION_MODS_KEY(MOD_RALT|MOD_LSFT, KC_MINS)
 #define AC_BACKSL   ACTION_MODS_KEY(MOD_RALT|MOD_LSFT,KC_DOT)
 #define AC_PIPE   ACTION_MODS_KEY(MOD_RALT|MOD_LSFT,KC_L)
+#define AC_FG     ACTION_MODS_KEY(MOD_RALT|MOD_LSFT, KC_7)
 
 const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
     /* Layer 0: Default Layer
@@ -33,7 +34,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *       `-------------------------------------------'
      */
   [0] = ACTIONMAP_HHKB(\
-		       ESC, 3, NONUS_BSLASH, s(NONUS_BSLASH), 5,   MINS, a(0), s(EQL), 6, s(DOT), BSLS, EQL,s(QUOT), 9, RBRC, \
+		       ESC, 3, a(7), FG, 5,   MINS, NONUS_BSLASH, s(SLSH), EQL, s(DOT), s(RBRC),SLSH ,s(QUOT), 9, RBRC, \
 		       TAB, B,   2,   P,  O,   7, LBRC, V ,   D,   L,   J,   W,Z,BSPC,	\
            LCTL,Q,   U,   I,   E,   M,   C,   T,   S,   R,   N,SCLN,ENT,             \
 		       LT1,0,   Y,   X,   s(COMM),   K,   4, A, G,H, F,LT1,LT3, \
@@ -54,16 +55,16 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // shift layer
   [1] = ACTIONMAP_HHKB(\
 		       ESC, s(1),  s(2), s(3),  s(4), s(5), s(6), s(7), s(8), s(9), s(0), MINS,EQL, a(3), s(GRV), \
-		       TAB, s(B),   2,   s(P),  s(O),   7, SLSH, s(V) , s(D),  s(L), s(J), s(W),s(Z),BSPC, \
+		       TAB, s(B),   2,   s(P),  s(O),   7, 8, s(V) , s(D),  s(L), s(J), s(W),s(Z),BSPC, \
 		       LCTL,s(Q),   s(U), s(I), s(E), COMM,  s(C),  s(T), s(S), s(R), s(N),s(SCLN),ENT, \
 		       TRNS,0, s(Y), s(X), DOT, s(K), s(M), s(A), s(G),s(H), s(F),TRNS,LT3, \
                 LALT,LGUI,          SPC,                LT2,LP4),
   // altgr layer a(5) ={ ; a(MINS) = } a(8) a(4) a(EQL)
   [2] = ACTIONMAP_HHKB(							\
-		       TRNS, TRNS,  TRNS,  TRNS, LOCH, ROCH,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, TRNS, TRNS, TRNS, TRNS, \
+		       TRNS, TRNS,  BSLASH,  s(BSLASH), LOCH, ROCH,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, TRNS, TRNS, TRNS, TRNS, \
            TRNS,PIPE,TRNS,1,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, TRNS, TRNS, TRNS, \
            TRNS,TRNS,QUOT,s(LBRC),TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,a(2),TRNS,TRNS, \
-		       TRNS,TRNS,BACKSL,a(5),a(MINS),TRNS,TRNS,TRNS,TRNS, TRNS,TRNS,TRNS,TRNS, \
+		       TRNS,BACKSL,a(5),a(MINS),TRNS,TRNS,TRNS,TRNS, TRNS,TRNS,TRNS,TRNS,TRNS, \
                 TRNS,TRNS,          8,               TRNS,TRNS),
   // hhkb layer
   [3] = ACTIONMAP_HHKB(							\
