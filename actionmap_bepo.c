@@ -61,7 +61,7 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
                 LALT,LGUI,          SPC,                LT2,LP4),
   // altgr layer a(5) ={ ; a(MINS) = } a(8) a(4) a(EQL)
   [2] = ACTIONMAP_HHKB(							\
-		       TRNS, TRNS,  BSLASH,  s(BSLASH), LOCH, ROCH,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, TRNS, TRNS, TRNS, TRNS, \
+		       TRNS, TRNS,  GRV,  s(GRV), LOCH, ROCH,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, TRNS, TRNS, TRNS, TRNS, \
            TRNS,PIPE,TRNS,1,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, TRNS, TRNS, TRNS, \
            TRNS,TRNS,QUOT,s(LBRC),TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,a(2),TRNS,TRNS, \
 		       TRNS,BACKSL,a(5),a(MINS),TRNS,TRNS,TRNS,TRNS, TRNS,TRNS,TRNS,TRNS,TRNS, \
