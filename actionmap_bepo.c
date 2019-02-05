@@ -53,8 +53,9 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
      *       `-------------------------------------------'
      */
   // shift layer
+  //		       ESC, s(1),  s(2), s(3),  s(4), s(5), s(6), s(7), s(8), s(9), s(0), MINS,EQL, a(3), s(GRV),
   [1] = ACTIONMAP_HHKB(\
-		       ESC, s(1),  s(2), s(3),  s(4), s(5), s(6), s(7), s(8), s(9), s(0), MINS,EQL, a(3), s(GRV), \
+		       ESC, s(1),  s(2), s(3),  s(4), s(5), s(6), s(7), s(8), s(9), s(0), MINS,EQL, a(9), s(GRV), \
 		       TAB, s(B),   2,   s(P),  s(O),   7, 8, s(V) , s(D),  s(L), s(J), s(W),s(Z),BSPC, \
 		       LCTL,s(Q),   s(U), s(I), s(E), COMM,  s(C),  s(T), s(S), s(R), s(N),s(SCLN),ENT, \
 		       TRNS,0, s(Y), s(X), DOT, s(K), s(M), s(A), s(G),s(H), s(F),TRNS,LT3, \
@@ -62,10 +63,10 @@ const uint16_t PROGMEM actionmaps[][MATRIX_ROWS][MATRIX_COLS] = {
   // altgr layer a(5) ={ ; a(MINS) = } a(8) a(4) a(EQL)
   [2] = ACTIONMAP_HHKB(							\
 		       TRNS, TRNS,  GRV,  s(GRV), LOCH, ROCH,  TRNS,  TRNS,  TRNS,  TRNS,  TRNS, TRNS, TRNS, TRNS, TRNS, \
-           TRNS,PIPE,TRNS,1,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, TRNS, TRNS, TRNS, \
-           TRNS,TRNS,QUOT,s(LBRC),TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,a(2),TRNS,TRNS, \
+		       TRNS,PIPE,TRNS,1,a(O),TRNS,TRNS,TRNS,TRNS,TRNS,TRNS, TRNS, TRNS, TRNS, \
+           TRNS,TRNS,QUOT,s(LBRC),TRNS,TRNS,TRNS,TRNS,TRNS,TRNS,a(N),TRNS,TRNS, \
 		       TRNS,BACKSL,a(5),a(MINS),TRNS,TRNS,TRNS,TRNS, TRNS,TRNS,TRNS,TRNS,TRNS, \
-                TRNS,TRNS,          8,               TRNS,TRNS),
+		       TRNS,TRNS,          s(EQL),               TRNS,TRNS),
   // hhkb layer
   [3] = ACTIONMAP_HHKB(							\
 	   PWR, F1,  F2,  F3,  F4,  F5,  F6,  F7,  F8,  F9,  F10, F11, F12, INS, DEL, \
